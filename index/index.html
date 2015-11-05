@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adelphi Cleaners</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+    <link href="css/full-width-pics.css" rel="stylesheet">
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+
+    <style>
+      #map-canvas {
+        height: 500px;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+
+    <script type="text/javascript">
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(43.745985, -79.293785);
+        var mapOptions = {
+          zoom: 15,
+          center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        // To add the marker to the map, use the 'map' property
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title:"Hello World!"
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
+
+  </head>
+
+  <body>
+    <a name="pagetop1"></a>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hours">Opening Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    <div class="full-width-image-1">
+
+      <div class="logo-wrapper well" id="well-trans">
+        <!--<img class="img-responsive" src="http://placehold.it/200x200&text=Logo" />-->
+        <h1 class="section-heading">ADELPHI CLEANERS<br></h1>
+        <h3 class="lead section-lead">SERVICING-TAILORING-COLD STORAGE</h1>
+      </div>
+
+    <a name="services"></a>
+    </div><!-- /full-width-image-1 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 section">
+            <h1 class="section-heading">Our Services</h1>
+            <p class="lead section-lead">We offer a variety of services for extremely low prices. Here is a list of some of the services we offer.</p>
+            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor. Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros ultrices neque, nec bibendum arcu ipsum eget justo. Phasellus vestibulum sagittis purus laoreet varius. Pellentesque malesuada malesuada mattis. Aliquam sed porta nisi, eget suscipit dolor. Nam ipsum sapien, rhoncus eu leo eu, ultricies pellentesque tellus.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="full-width-image-2">
+      <!-- box content goes here if you want to put text or a button in here -->
+    </div><!-- /full-width-image-2 -->
+      <a name="hours"></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 section">
+            <h1 class="section-heading">Opening Hours</h1>
+            <p class="lead section-lead">Here are our opening hours when you can come in and place an order.</p>
+            <p class="section-paragraph">Monday 8am to 7pm<br>Tuesday Monday 8am to 7pm<br>Wednesday Monday 8am to 7pm<br>Thursday Monday 8am to 7pm<br>Friday Monday 8am to 7pm<br>Saturday Monday 8am to 7pm<br>Sunday Closed<br></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="full-width-image-3">
+      <!-- box content goes here if you want to put text or a button in here -->
+    </div><!-- /full-width-image-2 -->
+      <a name="contact"></a> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 section">
+            <h1 class="section-heading">Contact Information</h1>
+            <p class="lead section-lead">We are located at the following address:</p>
+            <p class="section-paragraph">2070 Lawrence Ave E,<br>Scarborough, <br>ON M1R 2Z5,<br>Canada</p>
+
+            <div id="map-canvas"/></div>
+
+          </div>
+      </div>
+    </div>
+    
+       
+    <!-- FOOTER -->
+    <!--<div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            Last updated 6/12/13.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    </div><!-- /container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+
+</html>
